@@ -7,5 +7,5 @@ Use Command Below -
 `mvn exec:java -Dexec.mainClass="com.southbank.sbs.App" -Dexec.args="t1.json t2.json output.json"`
 
 ## Running Test
-`mvn test`
+`mvn test` or `mvn clean package`
 
