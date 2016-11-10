@@ -48,7 +48,7 @@ public class JsonOutput {
 	@Override
 	public String toString() {
 		return String.format("{"
-				+ "\"x\":\"%s\""
+				+ "\"x\":%s"
 				+ ", \"sumYT1\":%s"
 				+ ", \"sumYT2\":%s"
 				+ "}", 
