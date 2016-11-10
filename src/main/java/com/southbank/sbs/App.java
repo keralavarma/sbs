@@ -83,20 +83,6 @@ public class App
 				}
 			}
 		}
-				
-		// Create-and-load a List of entries
-		List<Map.Entry<Double, Double>> entries = new ArrayList<Map.Entry<Double, Double>>(xMapT2.entrySet());
-		// Sort the list using a custom Comparator that compares the z of t2
-		Collections.sort(entries, new Comparator<Map.Entry<Double, Double>>() {
-			public int compare(Entry<Double, Double> o1, Entry<Double, Double> o2) {
-				return o1.getValue().compareTo(o2.getValue());
-			}});
-
-		// Load the entries into a Map that preserves insert order
-		Map<Double, Double> sortedMap = new LinkedHashMap<Double, Double>();
-		for (Map.Entry<Double, Double> entry : entries){
-			sortedMap.put(entry.getKey(), entry.getValue());
-		}
 		
 		List<JsonOutput> listJsonOut = new ArrayList<JsonOutput>();
 				
